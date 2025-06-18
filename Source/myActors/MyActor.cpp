@@ -16,8 +16,7 @@ void AMyActor::BeginPlay()
 {
 	Super::BeginPlay();
     UE_LOG(LogTemp, Warning, TEXT("BeginPlay 실행됨")); 
-    int32 TrigerCount = 0;
-	AMyActor::Move10Times();
+   	AMyActor::Move10Times();
     
 }
 
