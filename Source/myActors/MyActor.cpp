@@ -38,13 +38,13 @@ void AMyActor::Move10Times() {
     
     float logDistance;
     UE_LOG(LogTemp, Warning, TEXT(" 현재 좌표 (%d, %d)"), x, y);
-    for (int32 i = 0; i < 100; i++)
+    for (int32 i = 0; i < 10; i++)
     {
         int32 dx = Step();
         int32 dy = Step();
         //삼항 연산자: x + dx 가 100 미만이면  dx에 Step 함수에서 뽑은 랜덤 값 저장
-        dx = (x + dx > 100) ? 0 : dx;
-        dy = (y + dy > 100) ? 0 : dy;
+        dx = (x + dx > 10) ? 0 : dx;
+        dy = (y + dy > 10) ? 0 : dy;
 
         // 이전 좌표값 저장
         prex = x;
