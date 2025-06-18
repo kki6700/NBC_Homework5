@@ -42,7 +42,7 @@ void AMyActor::Move10Times() {
     {
         int32 dx = Step();
         int32 dy = Step();
-        //삼항 연산자: x + dx 가 10 미만이면  dx에 Step 함수에서 뽑은 랜덤 값 저장
+        //삼항 연산자: x + dx 가 100 미만이면  dx에 Step 함수에서 뽑은 랜덤 값 저장
         dx = (x + dx > 100) ? 0 : dx;
         dy = (y + dy > 100) ? 0 : dy;
 
